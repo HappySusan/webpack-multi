@@ -1,0 +1,10 @@
+import './main.scss';
+import './plugin.js';
+// require('./main.scss');
+let sub = require('./sub');
+let app  = document.createElement('div');
+app.innerHTML = '<h1>Hello World~~~</h1>';
+app.appendChild(sub());
+document.body.appendChild(app);
+$('body').append('<p>promise result is 123123123</p>');
+$('p').greenify();
